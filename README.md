@@ -6,7 +6,12 @@ CY-METEO is a program designed to produce graphics from meteorological measureme
 It was made in C and script shell. What we used to make graphs is GNUPLOT.  
 The program awaits a command from the user to start filtering data from a meteorological file. Using C functions, it then sorts the data in specific ways in order to allow gnuplot to produce the graphs.  
 The data can be filtered depending on time and regions, and the order of the sorts reversed. Three sorting modes are also available.  
-  
+
+#### **--REQUIREMENTS--**
+Gnuplot :  
+```
+sudo apt install gnuplot
+```
   
 #### **--HOW TO USE--**
 
@@ -20,6 +25,13 @@ The data can be filtered depending on time and regions, and the order of the sor
 6.  Type "make clean" in your terminal to delete all our executables / object files if you don't want them.
 7.  Have fun !
 
+#### **--QUICK START--**
+```
+./script.sh -f ./C/data/meteo_short.csv -t1
+./script.sh -f ./C/data/meteo_short.csv -p3
+./script.sh -f ./C/data/meteo_short.csv -w
+./script.sh -f ./C/data/meteo_short.csv -h
+```
 
 #### **--LIST OF OPTIONS--**
 
